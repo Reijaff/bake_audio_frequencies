@@ -167,7 +167,7 @@ class Bake_All_Audio_Frequencies(bpy.types.Operator):
 
                     bpy.context.scene.frame_current = seq.frame_final_start
 
-                    bpy.ops.graph.sound_bake(
+                    bpy.ops.graph.sound_to_samples(
                         filepath=bpy.path.abspath(seq.sound.filepath),
                         low=r[0],
                         high=r[1])
